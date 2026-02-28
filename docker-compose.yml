@@ -90,7 +90,7 @@ services:
       - coolify
     labels:
       - traefik.enable=true
-      - traefik.http.routers.wp-filebrowser.rule=Host(`wpfiles.socialstudies.cloud`)
+      - traefik.http.routers.wp-filebrowser.rule=Host(`fileswp.socialstudies.cloud`)
       - traefik.http.routers.wp-filebrowser.entrypoints=https
       - traefik.http.routers.wp-filebrowser.tls=true
       - traefik.http.services.wp-filebrowser.loadbalancer.server.port=80
